@@ -1,0 +1,33 @@
+@import "../../var.css";
+.Color{
+  background-color: #9b9d78;
+}
+.Navbar{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 2;
+  margin: 0 10%;
+ 
+}
+.Title{
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--color-text);
+  font-family: var(--font-bebas);
+  letter-spacing: 2px;
+}
+.item {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 550;
+  color: var(--color-text);
+  font-family: var(--font-bebas);
+  letter-spacing: 1px;
+}
+.menuItems{
+list-style: none;
+}

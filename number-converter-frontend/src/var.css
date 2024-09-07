@@ -1,0 +1,12 @@
+:root{
+    --color-text: #2b231d;
+    --color-primary: #aec178c7;
+    --color-secondary: #c7cea4;
+    --color-dark: #644d3b;
+    ---color-bg: #F0EAD2;
+    --color-danger: #b30000;
+
+    --font-poppins: 'Poppins', sans-serif;
+    --font-bebas: 'Bebas Neue', cursive;
+
+}
