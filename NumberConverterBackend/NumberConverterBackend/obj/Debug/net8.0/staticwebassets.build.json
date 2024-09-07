@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "unQaFgVJt4UuLtcBEhQuV5DnX0RwYyvVQwJQ54km+SY=",
+  "Source": "NumberConverterBackend",
+  "BasePath": "_content/NumberConverterBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
