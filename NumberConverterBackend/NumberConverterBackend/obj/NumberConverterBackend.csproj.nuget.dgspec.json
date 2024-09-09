@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kyram\\source\\repos\\NumberConverterBackend\\NumberConverterBackend\\NumberConverterBackend.csproj": {}
+    "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\NumberConverterBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kyram\\source\\repos\\NumberConverterBackend\\NumberConverterBackend\\NumberConverterBackend.csproj": {
+    "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\NumberConverterBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kyram\\source\\repos\\NumberConverterBackend\\NumberConverterBackend\\NumberConverterBackend.csproj",
+        "projectUniqueName": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\NumberConverterBackend.csproj",
         "projectName": "NumberConverterBackend",
-        "projectPath": "C:\\Users\\kyram\\source\\repos\\NumberConverterBackend\\NumberConverterBackend\\NumberConverterBackend.csproj",
+        "projectPath": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\NumberConverterBackend.csproj",
         "packagesPath": "C:\\Users\\kyram\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kyram\\source\\repos\\NumberConverterBackend\\NumberConverterBackend\\obj\\",
+        "outputPath": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kyram\\AppData\\Roaming\\NuGet\\NuGet.Config",

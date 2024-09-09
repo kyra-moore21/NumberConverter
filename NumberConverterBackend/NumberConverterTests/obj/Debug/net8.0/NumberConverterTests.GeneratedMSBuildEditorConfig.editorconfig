@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NumberConverterTests
-build_property.ProjectDir = C:\Users\kyram\source\repos\NumberConverterBackend\NumberConverterTests\
+build_property.ProjectDir = C:\Users\kyram\OneDrive\Desktop\NumberConverter\NumberConverterBackend\NumberConverterTests\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
