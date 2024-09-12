@@ -10,7 +10,12 @@ jest.mock("react-router-dom", () => ({
     ...jest.requireActual("react-router-dom"),
     useNavigate: () => mockNavigate,
 }));
-
+//mock useEffect
+jest.mock('react', () => ({
+    ...jest.requireActual('react'),
+    useEffect: jest.fn(),
+  }));
+  
 describe("NumberResult Component", () => {
     const converted = [
         { word: "one", over9000: false }, // not over 9000

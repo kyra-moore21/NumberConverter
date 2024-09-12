@@ -1,29 +1,27 @@
 import React, { useState } from "react";
-import axios from "axios";
 import NumberInputForm from "./Components/NumberInputForm/NumberInputForm";
 import NumberResult from "./Components/NumberResult/NumberResult";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import NoMatch from "./Components/NoMatch/NoMatch";
 import styles from "./App.module.css";
+import { useNavigate } from "react-router-dom";
+import { convertNumbers } from "./numberConverterService";
 
 function App() {
   const [converted, setConvertedNumbers] = useState([]);
+  const navigate = useNavigate();
 
-  const apiRequest = (numbersArray, navigate) => {
-    axios
-      .post("https://localhost:7054/api/NumberConverter/sort", {
-        numbers: numbersArray,
-      })
-      .then((response) => {
-        console.log("Numbers Converted Sucessfully", response.data);
-        setConvertedNumbers(response.data);
-        navigate("/NumberResult");
-      })
-      .catch((error) => {
-        console.error("An error occured please try again", error);
-      });
-  };
+  const apiRequest = async (numbersArray) => {
+    try{
+      const result = await convertNumbers(numbersArray);
+      setConvertedNumbers(result);
+      navigate("/NumberResult");
+    }
+    catch (error){
+      console.error("An error occured. Please try again.", error);
+    }
+  }
 
   return (
     <>

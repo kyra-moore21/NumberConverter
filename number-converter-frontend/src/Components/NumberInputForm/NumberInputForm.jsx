@@ -25,7 +25,7 @@ const NumberInputForm = ({ apiRequest }) => {
     }
     if (
       numbersArray.some(
-        (num) => num > Number.MAX_SAFE_INTEGER || num < Number.MIN_SAFE_INTEGER
+        (num) => num > 2147483647 || num < -2147483647
       )
     ) {
       setErrorMessage(
@@ -61,7 +61,7 @@ const NumberInputForm = ({ apiRequest }) => {
             <input
               type="text"
               value={number}
-              onChange={(e) => setNumbers(e.target.value)}
+              onChange={(e) => setNumbers(e.target.value)} 
               id="stringOfNums"
               placeholder="ex: 1, 34, 5665, 21"
             />

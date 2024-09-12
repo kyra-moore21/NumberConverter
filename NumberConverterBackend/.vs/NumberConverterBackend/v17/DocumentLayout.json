@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B34E9B3B-60FB-4DF1-A312-BF5DE571465A}|NumberConverterBackend\\NumberConverterBackend.csproj|c:\\users\\kyram\\onedrive\\desktop\\numberconverter\\numberconverterbackend\\numberconverterbackend\\controllers\\numberconvertercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B34E9B3B-60FB-4DF1-A312-BF5DE571465A}|NumberConverterBackend\\NumberConverterBackend.csproj|solutionrelative:numberconverterbackend\\controllers\\numberconvertercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B34E9B3B-60FB-4DF1-A312-BF5DE571465A}|NumberConverterBackend\\NumberConverterBackend.csproj|c:\\users\\kyram\\onedrive\\desktop\\numberconverter\\numberconverterbackend\\numberconverterbackend\\services\\convertnumbersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B34E9B3B-60FB-4DF1-A312-BF5DE571465A}|NumberConverterBackend\\NumberConverterBackend.csproj|solutionrelative:numberconverterbackend\\services\\convertnumbersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B34E9B3B-60FB-4DF1-A312-BF5DE571465A}|NumberConverterBackend\\NumberConverterBackend.csproj|c:\\users\\kyram\\onedrive\\desktop\\numberconverter\\numberconverterbackend\\numberconverterbackend\\interfaces\\iconvertnumbers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B34E9B3B-60FB-4DF1-A312-BF5DE571465A}|NumberConverterBackend\\NumberConverterBackend.csproj|solutionrelative:numberconverterbackend\\interfaces\\iconvertnumbers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B34E9B3B-60FB-4DF1-A312-BF5DE571465A}|NumberConverterBackend\\NumberConverterBackend.csproj|c:\\users\\kyram\\onedrive\\desktop\\numberconverter\\numberconverterbackend\\numberconverterbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B34E9B3B-60FB-4DF1-A312-BF5DE571465A}|NumberConverterBackend\\NumberConverterBackend.csproj|solutionrelative:numberconverterbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B34E9B3B-60FB-4DF1-A312-BF5DE571465A}|NumberConverterBackend\\NumberConverterBackend.csproj|c:\\users\\kyram\\onedrive\\desktop\\numberconverter\\numberconverterbackend\\numberconverterbackend\\models\\numberword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B34E9B3B-60FB-4DF1-A312-BF5DE571465A}|NumberConverterBackend\\NumberConverterBackend.csproj|solutionrelative:numberconverterbackend\\models\\numberword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B34E9B3B-60FB-4DF1-A312-BF5DE571465A}|NumberConverterBackend\\NumberConverterBackend.csproj|c:\\users\\kyram\\onedrive\\desktop\\numberconverter\\numberconverterbackend\\numberconverterbackend\\models\\numberarray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B34E9B3B-60FB-4DF1-A312-BF5DE571465A}|NumberConverterBackend\\NumberConverterBackend.csproj|solutionrelative:numberconverterbackend\\models\\numberarray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 645,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,78 +34,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "NumberWord.cs",
-              "DocumentMoniker": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\Models\\NumberWord.cs",
-              "RelativeDocumentMoniker": "NumberConverterBackend\\Models\\NumberWord.cs",
-              "ToolTip": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\Models\\NumberWord.cs",
-              "RelativeToolTip": "NumberConverterBackend\\Models\\NumberWord.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T15:04:44.115Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\Program.cs",
-              "RelativeDocumentMoniker": "NumberConverterBackend\\Program.cs",
-              "ToolTip": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\Program.cs",
-              "RelativeToolTip": "NumberConverterBackend\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T14:40:56.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IConvertNumbers.cs",
-              "DocumentMoniker": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\Interfaces\\IConvertNumbers.cs",
-              "RelativeDocumentMoniker": "NumberConverterBackend\\Interfaces\\IConvertNumbers.cs",
-              "ToolTip": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\Interfaces\\IConvertNumbers.cs",
-              "RelativeToolTip": "NumberConverterBackend\\Interfaces\\IConvertNumbers.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T14:16:01.077Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ConvertNumbersService.cs",
               "DocumentMoniker": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\Services\\ConvertNumbersService.cs",
               "RelativeDocumentMoniker": "NumberConverterBackend\\Services\\ConvertNumbersService.cs",
               "ToolTip": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\Services\\ConvertNumbersService.cs",
               "RelativeToolTip": "NumberConverterBackend\\Services\\ConvertNumbersService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-04T14:15:25.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "NumberArray.cs",
-              "DocumentMoniker": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\Models\\NumberArray.cs",
-              "RelativeDocumentMoniker": "NumberConverterBackend\\Models\\NumberArray.cs",
-              "ToolTip": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\Models\\NumberArray.cs",
-              "RelativeToolTip": "NumberConverterBackend\\Models\\NumberArray.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T14:14:46.787Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NumberConverterController.cs",
-              "DocumentMoniker": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\Controllers\\NumberConverterController.cs",
-              "RelativeDocumentMoniker": "NumberConverterBackend\\Controllers\\NumberConverterController.cs",
-              "ToolTip": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\Controllers\\NumberConverterController.cs",
-              "RelativeToolTip": "NumberConverterBackend\\Controllers\\NumberConverterController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowBwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T13:28:50.498Z",
               "EditorCaption": ""
             }
           ]
