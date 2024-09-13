@@ -74,5 +74,18 @@ namespace NumberConverterTests
             Assert.Equal("One Sexvigintillion", result);
         }
 
+        [Fact]
+        public void ConvertNumberToWords_GivenTenSexvigintillion_ShouldReturnTrue()
+        {
+            // Arrange
+            BigInteger number = BigInteger.Pow(10, 82);
+
+            // Act
+            var result = _service.ConvertNumbers(number);
+
+            // Assert
+            Assert.Equal("Ten Sexvigintillion", result);
+        }
+
     }
 }
