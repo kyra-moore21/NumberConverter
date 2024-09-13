@@ -70,7 +70,7 @@ namespace NumberConverterTests
             //Arrange 
             var numberArray = new NumberArray
             {
-                Numbers = new string[] { "2147483648", "33", "3" }
+                Numbers = new string[] { "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", "33", "3" }
             };
 
             //Act

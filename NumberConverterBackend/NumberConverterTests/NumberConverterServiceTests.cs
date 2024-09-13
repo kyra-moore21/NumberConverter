@@ -1,5 +1,6 @@
 using Xunit;
 using NumberConverterBackend.Services;
+using System.Numerics;
 namespace NumberConverterTests
 {
     public class NumberConverterServiceTests
@@ -13,7 +14,7 @@ namespace NumberConverterTests
         public void ConvertNumberToWords_Given0_ShouldReturnZero()
         {
             //Arrange
-            int number = 0;
+            BigInteger number = 0;
 
             //Act
             var result = _service.ConvertNumbers(number);
@@ -26,7 +27,7 @@ namespace NumberConverterTests
         public void ConvertNumberToWords_GivenNegativeNumber_ShouldReturnNegative()
         {
             //Arrange
-            int number = -1;
+            BigInteger number = -1;
 
             //Act
             var result = _service.ConvertNumbers(number);
@@ -39,7 +40,7 @@ namespace NumberConverterTests
         public void ConvertNumberToWords_GivenOver900_ShouldReturnTrue()
         {
             //Arrange
-            int number = 9000;
+            BigInteger number = 9000;
 
             //Act
             var result = _service.ConvertNumbers(number);
@@ -47,5 +48,31 @@ namespace NumberConverterTests
             //Assert
             Assert.Equal("Nine Thousand", result);
         }
+        [Fact]
+        public void ConvertNumberToWords_GivenAG0ogol_ShouldReturnTrue()
+        {
+            //Arrange
+            BigInteger number =  BigInteger.Pow(10, 100);
+
+            //Act
+            var result = _service.ConvertNumbers(number);
+
+            //Assert
+            Assert.Equal("One Googol", result);
+        }
+
+        [Fact]
+        public void ConvertNumberToWords_GivenASexvigintillion_ShouldReturnTrue()
+        {
+            // Arrange
+            BigInteger number = BigInteger.Pow(10, 81);
+
+            // Act
+            var result = _service.ConvertNumbers(number);
+
+            // Assert
+            Assert.Equal("One Sexvigintillion", result);
+        }
+
     }
 }

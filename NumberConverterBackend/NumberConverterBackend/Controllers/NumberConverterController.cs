@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using NumberConverterBackend.Interfaces;
 using NumberConverterBackend.Models;
+using System.Numerics;
 
 namespace NumberConverterBackend.Controllers
 {
@@ -31,23 +32,23 @@ namespace NumberConverterBackend.Controllers
 
             foreach (var number in numberArray.Numbers)
             {
-                if (long.TryParse(number, out long n))
+                if (BigInteger.TryParse(number, out BigInteger n))
                 {
                     //catching larger than max int
-                    if(n > int.MaxValue || n < int.MinValue)
+                    if(n > BigInteger.Pow(10,100) || n < -BigInteger.Pow(10, 100))
                     {
                        return BadRequest("Number too large");
                     }
 
-                    int validNumber = (int)n;
-                    if(validNumber > 9000)
+                   
+                    if(n > 9000)
                     {
-                    string word = _convertNumbersService.ConvertNumbers(validNumber);
+                    string word = _convertNumbersService.ConvertNumbers(n);
                         result.Add(new NumberWord { Word = word, Over9000 = true });
                     }
                     else
                     {
-                        string word = _convertNumbersService.ConvertNumbers(validNumber);
+                        string word = _convertNumbersService.ConvertNumbers(n);
                          result.Add(new NumberWord { Word = word, Over9000 = false }); 
                     }
                 }

@@ -1,7 +1,9 @@
-﻿namespace NumberConverterBackend.Interfaces
+﻿using System.Numerics;
+
+namespace NumberConverterBackend.Interfaces
 {
     public interface IConvertNumbers
     {
-        string ConvertNumbers(int number);
+        string ConvertNumbers(BigInteger number);
     }
 }
