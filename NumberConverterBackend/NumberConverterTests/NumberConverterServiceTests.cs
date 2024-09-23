@@ -86,6 +86,18 @@ namespace NumberConverterTests
             // Assert
             Assert.Equal("Ten Sexvigintillion", result);
         }
+        [Fact]
+        public void ConvertNumberToWords_GivenLargeNumberWithNonZeroEnd_ShouldReturnTrue()
+        {
+            // Arrange
+            BigInteger number = BigInteger.Parse("123456789012345678901234567890123456789012345678901234567890123456789012345678901234567");
+
+            // Act
+            var result = _service.ConvertNumbers(number);
+
+            // Assert
+            Assert.Equal("One Hundred Twenty Three Septenvigintillion Four Hundred Fifty Six Sexvigintillion Seven Hundred Eighty Nine Quinvigintillion Twelve Quattuorvigintillion Three Hundred Forty Five Trevigintillion Six Hundred Seventy Eight Duovigintillion Nine Hundred One Unvigintillion Two Hundred Thirty Four Vigintillion Five Hundred Sixty Seven Novemdecillion Eight Hundred Ninety Octodecillion One Hundred Twenty Three Septendecillion Four Hundred Fifty Six Sexdecillion Seven Hundred Eighty Nine Quindecillion Twelve Quattuordecillion Three Hundred Forty Five Tredecillion Six Hundred Seventy Eight Duodecillion Nine Hundred One Undecillion Two Hundred Thirty Four Decillion Five Hundred Sixty Seven Nonillion Eight Hundred Ninety Octillion One Hundred Twenty Three Septillion Four Hundred Fifty Six Sextillion Seven Hundred Eighty Nine Quintillion Twelve Quadrillion Three Hundred Forty Five Trillion Six Hundred Seventy Eight Billion Nine Hundred One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven", result);
+        }
 
     }
 }
