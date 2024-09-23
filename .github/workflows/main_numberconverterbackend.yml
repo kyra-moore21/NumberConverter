@@ -17,40 +17,28 @@ jobs:
         with:
           dotnet-version: '8.x'
       
-      - name: List directory contents
+      - name: List solution structure
         run: |
-          dir
-          dir NumberConverterBackend
+          dir /s /b *.sln *.csproj
 
-      - name: Set build file path
+      - name: Build solution
         run: |
-          $slnPath = "NumberConverterBackend\NumberConverterBackend.sln"
-          $csprojPath = "NumberConverterBackend\NumberConverterBackend.csproj"
-          
-          if (Test-Path $slnPath) {
-            echo "Found .sln file: $slnPath"
-            echo "BUILD_FILE=$slnPath" >> $env:GITHUB_ENV
-          } elseif (Test-Path $csprojPath) {
-            echo "Found .csproj file: $csprojPath"
-            echo "BUILD_FILE=$csprojPath" >> $env:GITHUB_ENV
-          } else {
-            echo "Neither .sln nor .csproj file found at expected locations"
-            exit 1
-          }
+          dotnet build NumberConverterBackend\NumberConverterBackend.sln --configuration Release
 
-      - name: Build with dotnet
+      - name: Run tests
         run: |
-          dotnet build $env:BUILD_FILE --configuration Release
+          dotnet test NumberConverterBackend\NumberConverterBackend.sln --configuration Release --no-build
 
-      - name: dotnet publish
+      - name: Publish main project
         run: |
-          dotnet publish $env:BUILD_FILE -c Release -o ${{env.DOTNET_ROOT}}\myapp
+          $publishPath = "$env:RUNNER_TEMP\publish"
+          dotnet publish NumberConverterBackend\NumberConverterBackend\NumberConverterBackend.csproj -c Release -o "$publishPath"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ${{env.DOTNET_ROOT}}\myapp
+          path: ${{ runner.temp }}\publish
 
   deploy:
     runs-on: windows-latest
