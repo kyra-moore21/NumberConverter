@@ -17,7 +17,7 @@ builder.Services.AddCors(options =>
         policy =>
         {
             
-            policy.WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyHeader();
+            policy.WithOrigins("http://localhost:3000", "https://numberconverterbackend-hmekfdf6dmedd4b2.eastus2-01.azurewebsites.net").AllowAnyMethod().AllowAnyHeader();
         });
 });
 
