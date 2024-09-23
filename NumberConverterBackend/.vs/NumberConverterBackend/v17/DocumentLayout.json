@@ -42,21 +42,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 645,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\Program.cs",
-              "RelativeDocumentMoniker": "NumberConverterBackend\\Program.cs",
-              "ToolTip": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\Program.cs",
-              "RelativeToolTip": "NumberConverterBackend\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T18:57:14.992Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -79,6 +66,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\Program.cs",
+              "RelativeDocumentMoniker": "NumberConverterBackend\\Program.cs",
+              "ToolTip": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\Program.cs",
+              "RelativeToolTip": "NumberConverterBackend\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T18:57:14.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "NumberConverterBackend.csproj",
               "DocumentMoniker": "C:\\Users\\kyram\\OneDrive\\Desktop\\NumberConverter\\NumberConverterBackend\\NumberConverterBackend\\NumberConverterBackend.csproj",
@@ -87,8 +87,7 @@
               "RelativeToolTip": "NumberConverterBackend\\NumberConverterBackend.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-23T16:31:23.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-23T16:31:23.504Z"
             },
             {
               "$type": "Document",
