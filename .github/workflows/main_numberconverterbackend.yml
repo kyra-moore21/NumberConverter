@@ -1,0 +1,83 @@
+name: Build and deploy ASP.Net Core app to Azure Web App - NumberConverterBackend
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up .NET Core
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.x'
+
+    - name: List directory contents
+      run: |
+        dir
+        dir NumberConverterBackend
+
+    - name: Set build file path
+      run: |
+        $slnPath = "NumberConverterBackend\NumberConverterBackend.sln"
+        $csprojPath = "NumberConverterBackend\NumberConverterBackend.csproj"
+        if (Test-Path $slnPath) {
+          echo "Found .sln file: $slnPath"
+          echo "BUILD_FILE=$slnPath" >> $env:GITHUB_ENV
+        } elseif (Test-Path $csprojPath) {
+          echo "Found .csproj file: $csprojPath"
+          echo "BUILD_FILE=$csprojPath" >> $env:GITHUB_ENV
+        } else {
+          echo "Neither .sln nor .csproj file found at expected locations"
+          exit 1
+        }
+
+    - name: Build with dotnet
+      run: dotnet build $env:BUILD_FILE --configuration Release
+
+    - name: dotnet publish
+      run: dotnet publish $env:BUILD_FILE -c Release -o "${{env.DOTNET_ROOT}}\myapp"
+
+    - name: Upload artifact for deployment job
+      uses: actions/upload-artifact@v4
+      with:
+        name: .net-app
+        path: ${{env.DOTNET_ROOT}}\myapp
+
+  deploy:
+    runs-on: windows-latest
+    needs: build
+    environment:
+      name: 'Production'
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+    permissions:
+      id-token: write #This is required for requesting the JWT
+
+    steps:
+    - name: Download artifact from build job
+      uses: actions/download-artifact@v4
+      with:
+        name: .net-app
+
+    - name: Login to Azure
+      uses: azure/login@v2
+      with:
+        client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_EB641445DCFC468FA6F45F0935EAF8A2 }}
+        tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_DF9761E1853A4367A8458C1708D43553 }}
+        subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_1280850E1D304F449185EB9EF63A031A }}
+
+    - name: Deploy to Azure Web App
+      id: deploy-to-webapp
+      uses: azure/webapps-deploy@v3
+      with:
+          app-name: 'NumberConverterBackend'
+          slot-name: 'Production'
+          package: .
+          
