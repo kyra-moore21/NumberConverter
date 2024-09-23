@@ -20,14 +20,12 @@ jobs:
       - name: List directory contents
         run: |
           dir
-          dir NumberConverter
-          dir NumberConverter\NumberConverterBackend
-          dir NumberConverter\NumberConverterBackend\NumberConverterBackend
+          dir NumberConverterBackend
 
       - name: Set build file path
         run: |
-          $slnPath = "NumberConverter\NumberConverterBackend\NumberConverterBackend.sln"
-          $csprojPath = "NumberConverter\NumberConverterBackend\NumberConverterBackend\NumberConverterBackend.csproj"
+          $slnPath = "NumberConverterBackend\NumberConverterBackend.sln"
+          $csprojPath = "NumberConverterBackend\NumberConverterBackend.csproj"
           
           if (Test-Path $slnPath) {
             echo "Found .sln file: $slnPath"
