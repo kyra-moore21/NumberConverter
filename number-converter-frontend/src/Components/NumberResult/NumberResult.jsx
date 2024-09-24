@@ -18,17 +18,9 @@ const NumberResult = ({ converted }) => {
         {converted.map((number, id) => {
           return (
             <li key={id} className={styles.ListItem}>
-              {number.over9000 ? (
-                //display an img if over 9000
-                <img
-                  className={styles.Img}
-                  src="/assests/over9000.jpg"
-                  alt={number.word}
-                  title={number.word}
-                />
-              ) : (
+              
                 <span>{number.word},</span>
-              )}
+              
             </li>
           );
         })}
